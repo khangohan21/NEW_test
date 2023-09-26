@@ -9,9 +9,9 @@ service:
 
 ingress:
   enabled: false
-  host: 13.234.120.211
+  host: 65.0.185.89
 
 
-mongodbUri: "mongodb://13.234.120.211:27017/mydb"
-redisHost: "13.234.120.211"
+mongodbUri: "mongodb://65.0.185.89:27017/mydb"
+redisHost: "65.0.185.89"
 redisPort: 6379
