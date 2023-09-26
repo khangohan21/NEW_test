@@ -43,7 +43,7 @@ jobs:
     
       - name: Deploy to Kubernetes cluster
         run: |
-          kubectl apply kubernetes/
+          kubectl apply -f deployment.yaml
 
       #- name: Deploy to Kubernetes cluster
         #run: |
