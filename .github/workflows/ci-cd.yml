@@ -42,7 +42,7 @@ jobs:
 
       - name: Deploy to Kubernetes cluster
         run: |
-          cd helm/nodeapp-chart/
+          cd /var/www/helm/nodeapp-chart/
           helm upgrade --install nodeapp . \
            #--set image.repository=khanwahed/nodeapp \
             #--set image.tag=latest
