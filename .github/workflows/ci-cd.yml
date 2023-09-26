@@ -39,10 +39,15 @@ jobs:
         with:
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
           version: 'latest'
-
+          
+    
       - name: Deploy to Kubernetes cluster
         run: |
-          cd /var/www/helm/nodeapp-chart/
-          helm upgrade --install nodeapp . \
+          kubectl apply -f 
+
+      #- name: Deploy to Kubernetes cluster
+        #run: |
+         # cd /var/www/helm/nodeapp-chart/
+          #helm upgrade --install nodeapp . \
            #--set image.repository=khanwahed/nodeapp \
             #--set image.tag=latest
