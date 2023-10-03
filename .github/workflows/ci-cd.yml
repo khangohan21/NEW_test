@@ -45,9 +45,9 @@ jobs:
         run: |
           kubectl apply -f deployment.yaml
 
-      #- name: Deploy to Kubernetes cluster
-        #run: |
-         # cd /var/www/helm/nodeapp-chart/
-          #helm upgrade --install nodeapp . \
-           #--set image.repository=khanwahed/nodeapp \
-            #--set image.tag=latest
+      - name: Deploy to Kubernetes cluster
+        run: |
+          cd /var/www/helm/nodeapp-chart/
+          helm upgrade --install nodeapp . \
+           --set image.repository=khanwahed/nodeapp \
+            --set image.tag=latest
